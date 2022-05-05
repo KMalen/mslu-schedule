@@ -65,6 +65,8 @@
 </template>
 
 <script lang="ts">
+import axios from 'axios';
+
 export default {
 	name: 'Scheduler',
 	data() {
@@ -101,9 +103,19 @@ export default {
 				{ value: 2020, text: '2020/2021' },
 				{ value: 2021, text: '2021/2022' }
 			],
-			groupOptions: [],
 			weekOptions: []
 		};
+	},
+	watch: {
+		facultyOptions() {
+			return null;
+		},
+		courseOptions() {
+			return null;
+		},
+		yearOptions() {
+			return null;
+		}
 	}
 };
 </script>
